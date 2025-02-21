@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geometric Circles</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <h1>Interactive Geometric Circles</h1>
+    <div id="status">Click to place points A, B, C, and D</div>
+    <div class="canvas-container">
+        <canvas id="canvas" width="800" height="400"></canvas>
+    </div>
+    <div id="coordinates"></div>
+    <div class="controls">
+        <button onclick="reset()">Reset</button>
+        <button onclick="showAbout()">About</button>
+    </div>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAbout()">&times;</span>
+            <h2>About This Application</h2>
+            <p>This application was created by <a target="_blank" href="https://github.com/fedyafedko/GeometricCircles">Vlad Fedko</a></p>
+            <p>This interactive geometric application allows you to explore circle intersections:</p>
+            <ul>
+                <li>Click to place points A, B, C, and D on the canvas</li>
+                <li>Two circles will be drawn:
+                    <ul>
+                        <li>Blue circle centered at A with radius AB</li>
+                        <li>Yellow circle centered at C with radius CD</li>
+                    </ul>
+                </li>
+                <li>Drag any point to update the circles in real-time</li>
+                <li>Intersection points (if any) will be shown in red</li>
+                <li>Use the Reset button to start over</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
